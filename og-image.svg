@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="40%" stop-color="#7f1d1d"/>
+      <stop offset="100%" stop-color="#dc2626"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#fca5a5"/>
+      <stop offset="100%" stop-color="#ef4444"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.12)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.06)"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- Decorative circles -->
+  <circle cx="1000" cy="100" r="300" fill="rgba(239,68,68,0.08)"/>
+  <circle cx="1100" cy="500" r="200" fill="rgba(252,165,165,0.06)"/>
+  <circle cx="200" cy="550" r="150" fill="rgba(239,68,68,0.05)"/>
+
+  <!-- PDF icon (larger decorative) -->
+  <g transform="translate(100, 170)" fill="none">
+    <rect x="0" y="0" width="120" height="140" rx="16" fill="rgba(255,255,255,0.1)" stroke="#fca5a5" stroke-width="3"/>
+    <path d="M90 0 v30 a15 15 0 0 0 15 15 h15" fill="rgba(255,255,255,0.05)" stroke="#fca5a5" stroke-width="3"/>
+    <text x="60" y="85" font-family="system-ui, sans-serif" font-size="36" font-weight="900" fill="#fca5a5" text-anchor="middle">PDF</text>
+    <line x1="20" y1="100" x2="100" y2="100" stroke="#fca5a5" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+    <line x1="20" y1="115" x2="80" y2="115" stroke="#fca5a5" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+  </g>
+
+  <!-- Main title area -->
+  <g transform="translate(300, 140)">
+    <!-- "Stirling PDF" title -->
+    <text x="0" y="80" font-family="system-ui, -apple-system, sans-serif" font-size="72" font-weight="800" fill="#ffffff">Stirling PDF</text>
+    <text x="0" y="140" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="400" fill="#fca5a5">The Open-Source PDF Platform</text>
+
+    <!-- Tagline -->
+    <text x="0" y="190" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="300" fill="#e5e7eb">Edit · Sign · Convert · OCR · Merge · Split · Compress</text>
+
+    <!-- Features row -->
+    <g transform="translate(0, 250)">
+      <rect x="0" y="0" width="180" height="44" rx="22" fill="url(#accent)" opacity="0.2"/>
+      <text x="90" y="28" font-family="system-ui, sans-serif" font-size="16" font-weight="600" fill="#fca5a5" text-anchor="middle">84K ★ GitHub</text>
+
+      <rect x="200" y="0" width="180" height="44" rx="22" fill="rgba(255,255,255,0.08)"/>
+      <text x="290" y="28" font-family="system-ui, sans-serif" font-size="16" font-weight="500" fill="#e5e7eb" text-anchor="middle">MIT Licensed</text>
+
+      <rect x="400" y="0" width="200" height="44" rx="22" fill="rgba(255,255,255,0.08)"/>
+      <text x="500" y="28" font-family="system-ui, sans-serif" font-size="16" font-weight="500" fill="#e5e7eb" text-anchor="middle">100M+ Pulls</text>
+    </g>
+  </g>
+
+  <!-- Info card -->
+  <g transform="translate(820, 155)">
+    <rect x="0" y="0" width="320" height="320" rx="20" fill="url(#card)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="160" y="40" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#fca5a5" text-anchor="middle" letter-spacing="2">RAILWAY DEPLOYMENT</text>
+
+    <g transform="translate(30, 70)">
+      <text x="0" y="0" font-family="system-ui, sans-serif" font-size="13" fill="#d1d5db" font-weight="700">Zero Dependencies</text>
+      <text x="0" y="22" font-family="system-ui, sans-serif" font-size="13" fill="#9ca3af">No DB · No Redis · No Volumes</text>
+
+      <text x="0" y="55" font-family="system-ui, sans-serif" font-size="13" fill="#d1d5db" font-weight="700">50+ PDF Tools</text>
+      <text x="0" y="77" font-family="system-ui, sans-serif" font-size="13" fill="#9ca3af">Edit, Sign, Convert &amp; more</text>
+
+      <text x="0" y="110" font-family="system-ui, sans-serif" font-size="13" fill="#d1d5db" font-weight="700">Free Tier Ready</text>
+      <text x="0" y="132" font-family="system-ui, sans-serif" font-size="13" fill="#9ca3af">~1GB image · Fits free tier</text>
+
+      <text x="0" y="165" font-family="system-ui, sans-serif" font-size="13" fill="#d1d5db" font-weight="700">Multi-Arch</text>
+      <text x="0" y="187" font-family="system-ui, sans-serif" font-size="13" fill="#9ca3af">amd64 + arm64 support</text>
+
+      <text x="0" y="220" font-family="system-ui, sans-serif" font-size="13" fill="#d1d5db" font-weight="700">38+ Languages</text>
+      <text x="0" y="242" font-family="system-ui, sans-serif" font-size="13" fill="#9ca3af">Global UI out of the box</text>
+    </g>
+  </g>
+
+  <!-- Railway deploy button visual -->
+  <g transform="translate(300, 480)">
+    <rect x="0" y="0" width="280" height="56" rx="28" fill="#dc2626"/>
+    <rect x="2" y="2" width="276" height="52" rx="26" fill="#ef4444"/>
+    <text x="140" y="35" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#ffffff" text-anchor="middle">Deploy on Railway →</text>
+  </g>
+
+  <g transform="translate(620, 480)">
+    <rect x="0" y="0" width="240" height="56" rx="28" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+    <text x="120" y="35" font-family="system-ui, sans-serif" font-size="16" font-weight="600" fill="#d1d5db" text-anchor="middle">One-Click Deploy</text>
+  </g>
+</svg>

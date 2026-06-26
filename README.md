@@ -11,9 +11,11 @@
 [![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/Stirling-Tools/Stirling-PDF/blob/main/LICENSE)
 [![GitHub Stars](https://img.shields.io/github/stars/Stirling-Tools/Stirling-PDF?style=flat-square)](https://github.com/Stirling-Tools/Stirling-PDF)
 
-> **The #1 open-source PDF platform — edit, sign, convert, OCR, merge, split, compress, and more.**  
-> 84,000+ GitHub stars · MIT licensed · 50+ PDF tools · 38+ languages  
+> **The #1 open-source PDF platform — edit, sign, convert, OCR, merge, split, compress, and more.**  \
+> 84,000+ GitHub stars · MIT licensed · 50+ PDF tools · 38+ languages  \
 > **Zero dependencies** — no database, no Redis, no persistent volumes required.
+>
+> ⏳ **First deploy takes 3-5 minutes** — Stirling-PDF is a ~1GB Java/Spring Boot image. Railway downloads it on the first deploy. Subsequent deploys use the cached layer. This is normal — don't cancel the deployment!
 
 ---
 

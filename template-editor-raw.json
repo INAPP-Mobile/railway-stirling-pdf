@@ -1,0 +1,50 @@
+{
+  "PORT": {
+    "value": "8080",
+    "description": "HTTP listen port"
+  },
+  "TZ": {
+    "value": "UTC",
+    "description": "Server timezone"
+  },
+  "SYSTEM_SECURITY_LOGINENABLED": {
+    "value": "false",
+    "description": "Enable authentication (true/false)"
+  },
+  "SYSTEM_SECURITY_INITIALLOGINUSER": {
+    "value": "admin",
+    "description": "Initial admin username"
+  },
+  "SYSTEM_SECURITY_INITIALLOGINPASS": {
+    "value": "stirling",
+    "description": "Initial admin password (change on first login)"
+  },
+  "SYSTEM_SECURITY_ENABLEMULTITENANCY": {
+    "value": "false",
+    "description": "Enable multi-instance user isolation"
+  },
+  "SYSTEM_ROOTPATH": {
+    "value": "/",
+    "description": "Base URL path for reverse proxy deployments"
+  },
+  "SYSTEM_ALLOWOCR": {
+    "value": "true",
+    "description": "Enable/disable OCR features globally"
+  },
+  "SYSTEM_UI_APPNAME": {
+    "value": "Stirling-PDF",
+    "description": "Custom application title"
+  },
+  "SYSTEM_UI_HIDELANGUAGE": {
+    "value": "false",
+    "description": "Hide language selection dropdown"
+  },
+  "SYSTEM_MAIL_ENABLED": {
+    "value": "false",
+    "description": "Enable SMTP email for invitations"
+  },
+  "SYSTEM_MAIL_PORT": {
+    "value": "587",
+    "description": "SMTP server port"
+  }
+}

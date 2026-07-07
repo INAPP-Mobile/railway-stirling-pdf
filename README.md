@@ -13,7 +13,7 @@
 
 > **The #1 open-source PDF platform — edit, sign, convert, OCR, merge, split, compress, and more.**  \
 > 84,000+ GitHub stars · MIT licensed · 50+ PDF tools · 38+ languages  \
-> **Zero dependencies** — no database, no Redis, no persistent volumes required.
+> **Single container** — no database or Redis required. Persistent volume auto-provisioned at `/configs`.
 >
 > ⏳ **First deploy takes 3-5 minutes** — Stirling-PDF is a ~1GB Java/Spring Boot image. Railway downloads it on the first deploy. Subsequent deploys use the cached layer. This is normal — don't cancel the deployment!
 
@@ -23,7 +23,7 @@
 
 - **50+ PDF Tools** — Merge, split, convert, compress, OCR, sign, redact, extract, rotate, and more — all in one app.
 - **No Data Leaves Your Server** — Everything runs locally. Files are processed in-memory and deleted after the task.
-- **Zero Dependencies** — Single Java/Spring Boot container. No database, no Redis, no external services needed.
+- **Single Container** — Java/Spring Boot app. No database or Redis needed. Includes persistent volume at `/configs`.
 - **REST API** — All tools are accessible via API for automation and integration into existing workflows.
 - **Global UI** — Interface available in 38+ languages with active community translations.
 - **Multi-Arch** — Official image supports both amd64 and arm64 architectures.
@@ -108,7 +108,7 @@ For full configuration options — OAuth 2.0, SAML SSO, external databases, Libr
 
 | Feature | Benefit |
 |---|---|
-| **Zero dependencies** | No database, Redis, or volumes needed — just deploy |
+| **Single container** | No database or Redis needed — just deploy |
 | **Single container** | No complex orchestration or multi-service setup |
 | **50+ built-in tools** | Replace dozens of separate PDF utilities with one app |
 | **REST API included** | Automate PDF workflows in your existing pipeline |
@@ -121,9 +121,7 @@ With Railway, you get automatic HTTPS, global CDN, health monitoring, and scalab
 
 ## Deploy and Host
 
-### About Hosting
-
-Stirling PDF runs as a single Docker container with no external dependencies. It uses file-based storage by default (no database required), making it an ideal zero-dependency deployment for Railway.
+### About HostingStirling PDF runs as a single Docker container with no external database required. It uses file-based storage at `/configs`, which is mounted as a Railway persistent volume. This ensures your settings, user accounts, and custom configurations survive redeploys.
 
 The default admin credentials are:
 - **Username:** `admin`
@@ -154,7 +152,7 @@ Railway uses the following endpoint for health checks:
 ### Deployment Dependencies
 
 - **Runtime:** Java 17+ (bundled in container)
-- **Storage:** File-based (default) — no database required
+- **Storage:** Persistent volume at `/configs` — stores settings, user accounts, and config (auto-provisioned)
 - **Optional:** PostgreSQL or MySQL for external database mode (not needed for basic usage)
 
 ---

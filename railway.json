@@ -8,6 +8,12 @@
     "healthcheckPath": "/api/v1/info/status",
     "healthcheckTimeout": 30,
     "restartPolicyType": "ON_FAILURE",
-    "restartPolicyMaxRetries": 5
+    "restartPolicyMaxRetries": 5,
+    "startupTimeout": 300
+  },
+  "volumes": {
+    "stirling-config": {
+      "mountPath": "/configs"
+    }
   }
 }

@@ -1,6 +1,6 @@
 # Stirling PDF — Railway Deployment Template
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/stirling-pdf-1)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.com/deploy/stirling-pdf-1)
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/INAPP-Mobile/railway-stirling-pdf/main/og-image.svg" alt="Stirling PDF on Railway" width="100%">
@@ -50,7 +50,7 @@
 
 ## One-Click Deploy
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/stirling-pdf-1)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.com/deploy/stirling-pdf-1)
 
 Click the button above and Railway will:
 

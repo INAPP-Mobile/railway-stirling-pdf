@@ -8,7 +8,7 @@
 # Use the official latest image for the full-featured version
 # Stirling-PDF includes authentication and enterprise features by default
 # in Docker images (except ultra-lite variant)
-FROM docker.io/stirlingtools/stirling-pdf:2.14.3
+FROM docker.io/stirlingtools/stirling-pdf:3.0.2
 
 # ---------------------------------------------------------------------------
 # Railway Health Check
